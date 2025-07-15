@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional - Santiago Maestre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-canvas">
+        <div class="floating-tech"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">PORTAFOLIO</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">INICIO</a>
+                <a href="#about" class="nav-link">SOBRE MÍ</a>
+                <a href="#skills" class="nav-link">HABILIDADES</a>
+                <a href="#projects" class="nav-link">PROYECTOS</a>
+                <a href="#experience" class="nav-link">EXPERIENCIA</a>
+                <a href="#contact" class="nav-link">CONTACTO</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <div class="placeholder-avatar" id="profile-upload-area">
+                            <div class="hologram-effect"></div>
+                            <div class="scan-lines"></div>
+                            <i class="fas fa-user" id="default-avatar"></i>
+                            <div class="upload-overlay">
+                            <i class="fas fa-camera"></i>
+                                <span> Foto</span>
+                            </div>
+                        </div>
+                        <input type="fil" id="profile-image-input" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="profile-glow"></div>
+                    <div class="energy-rings"></div>
+                    <div class="upload-instructions">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line glitch" data-text="TU NOMBRE">Kevin Santiago Maestre Castillejo</span>
+                    <span class="title-subtitle typewriter">Estudiante de Programación</span>
+                </h1>
+                <p class="hero-description matrix-text">
+                    Aprendiendo a crear sitios web increíbles • 4 meses creciendo como programador • Construyendo el futuro línea por línea
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary">
+                        <span>Contactar</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SOBRE MÍ</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Futuro Programador</h3>
+                    <p class="about-description">
+                        Comencé mi viaje en programación hace 4 meses y cada día es una nueva aventura. 
+                        Estoy emocionado por aprender nuevas tecnologías y crear proyectos que resuelvan problemas reales. 
+                        Mi objetivo es convertirme en un desarrollador completo y contribuir al mundo tech.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-label">Proyectos de Práctica</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="150">0</div>
+                            <div class="stat-label">Horas Estudiando</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Meses Aprendiendo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="floating-elements">
+                        <div class="float-item" data-speed="0.5">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="float-item" data-speed="0.8">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="float-item" data-speed="0.3">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="float-item" data-speed="0.6">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">HABILIDADES</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Aprendiendo</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="30"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">20%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="20"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bases de Datos</span>
+                                <span class="skill-percentage">15%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="15"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Herramientas</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PROYECTOS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mi Primera Página Web</h3>
+                        <p class="project-description">
+                            Una página web personal creada con HTML, CSS y JavaScript. Incluye 
+                            animaciones, formulario de contacto y diseño responsivo.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Calculadora Interactiva</h3>
+                        <p class="project-description">
+                            Una calculadora moderna con efectos visuales y sonidos. 
+                            Mi primer proyecto usando JavaScript para lógica de programación.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Juego de Memoria</h3>
+                        <p class="project-description">
+                            Un divertido juego de memoria con cartas que se voltean. 
+                            Aprendí sobre eventos, arrays y manipulación del DOM.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS Animations</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EXPERIENCIA</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Ahora - 4 Meses</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Estudiante Autodidacta</h3>
+                        <h4 class="timeline-company">Aprendizaje Online</h4>
+                        <p class="timeline-description">
+                            Estudiando programación web a través de cursos online, YouTube y práctica diaria. 
+                            Enfocándome en HTML, CSS, JavaScript y conceptos fundamentales de programación.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">HTML/CSS</span>
+                            <span class="skill-chip">JavaScript</span>
+                            <span class="skill-chip">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Mes 3 - 4</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Primeros Proyectos</h3>
+                        <h4 class="timeline-company">Práctica Personal</h4>
+                        <p class="timeline-description">
+                            Creando mis primeros proyectos web interactivos. Aprendiendo JavaScript, 
+                            DOM manipulation y diseño responsivo con CSS Grid y Flexbox.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">DOM</span>
+                            <span class="skill-chip">CSS Grid</span>
+                            <span class="skill-chip">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Mes 1 - 2</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Fundamentos Web</h3>
+                        <h4 class="timeline-company">Cursos Online</h4>
+                        <p class="timeline-description">
+                            Aprendiendo los fundamentos: HTML semántico, CSS básico, Git/GitHub. 
+                            Descubriendo el mundo de la programación y enamorándome del código.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">HTML</span>
+                            <span class="skill-chip">CSS</span>
+                            <span class="skill-chip">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACTO</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">¡Trabajemos Juntos!</h3>
+                    <p class="contact-description">
+                        ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él 
+                        y ayudarte a hacerlo realidad.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>Maestresantiago30@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <p>+57 301 6972855</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ubicación</h4>
+                                <p>Cucúta, Colombia<p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nombre</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Asunto</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Santiago Maestre. Todos los derechos reservados.</p>
+                <p>Creado con <span class="heart">❤️</span> y mucho código</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
